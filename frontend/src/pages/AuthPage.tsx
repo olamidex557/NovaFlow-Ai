@@ -30,7 +30,7 @@ export default function AuthPage() {
             {isLogin ? 'Welcome back' : 'Create your account'}
           </h2>
           <p className="text-muted-foreground text-sm mb-8">
-            {isLogin ? 'Sign in to your NovaFlow workspace' : 'Start your 14-day free trial — no card needed'}
+            {isLogin ? 'Sign in to your NovaFlow workspace' : 'Create your NovaFlow account — no card needed'}
           </p>
 
           <div className="space-y-4">

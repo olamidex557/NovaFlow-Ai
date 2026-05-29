@@ -12,7 +12,7 @@ const features = [
 ];
 
 const plans = [
-  { name: 'Starter', price: 29, desc: 'For solo creators getting started', features: ['30 videos/month', '100 AI scripts', '3 YouTube channels', 'Basic analytics', 'Email support'], cta: 'Start Free Trial', highlight: false },
+  { name: 'Starter', price: 29, desc: 'For solo creators getting started', features: ['30 videos/month', '100 AI scripts', '3 YouTube channels', 'Basic analytics', 'Email support'], cta: 'Choose Starter', highlight: false },
   { name: 'Pro', price: 79, desc: 'For serious creators & small agencies', features: ['Unlimited videos', 'Unlimited scripts', '10 YouTube channels', 'Advanced analytics', 'Priority support', 'Custom branding', 'API access'], cta: 'Get Pro', highlight: true },
   { name: 'Agency', price: 199, desc: 'For agencies managing multiple brands', features: ['Everything in Pro', 'Unlimited channels', 'White-label dashboard', 'Team seats (5)', 'Dedicated support', 'Custom integrations'], cta: 'Contact Sales', highlight: false },
 ];
@@ -47,7 +47,7 @@ export default function LandingPage() {
           </div>
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="sm" className="text-muted-foreground" onClick={() => setPage('login')}>Sign in</Button>
-            <Button size="sm" className="bg-[var(--nova-cyan)] text-black hover:bg-[var(--nova-cyan)]/90 font-semibold" onClick={handleDemo}>Start Free</Button>
+            <Button size="sm" className="bg-[var(--nova-cyan)] text-black hover:bg-[var(--nova-cyan)]/90 font-semibold" onClick={handleDemo}>Start now</Button>
           </div>
         </div>
       </nav>
@@ -76,13 +76,13 @@ export default function LandingPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 fade-in-up-3">
             <Button size="lg" className="bg-[var(--nova-cyan)] text-black hover:bg-[var(--nova-cyan)]/90 font-bold px-8 h-12 text-base" onClick={handleDemo}>
-              Start creating free →
+              Start creating →
             </Button>
             <Button size="lg" variant="outline" className="border-border/60 h-12 text-base" onClick={handleDemo}>
               View live demo
             </Button>
           </div>
-          <p className="text-sm text-muted-foreground mt-4 fade-in-up-4">No credit card required · 14-day free trial</p>
+          <p className="text-sm text-muted-foreground mt-4 fade-in-up-4">No credit card required</p>
         </div>
 
         {/* Dashboard preview */}
@@ -159,7 +159,7 @@ export default function LandingPage() {
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-[var(--nova-green)]/10 text-[var(--nova-green)] border-[var(--nova-green)]/20">Pricing</Badge>
             <h2 className="text-4xl md:text-5xl font-black mb-4">Simple, transparent pricing</h2>
-            <p className="text-muted-foreground text-lg">Start free, scale when you're ready.</p>
+            <p className="text-muted-foreground text-lg">Scale when you're ready.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {plans.map((plan) => (
@@ -195,9 +195,9 @@ export default function LandingPage() {
           </h2>
           <p className="text-muted-foreground text-lg mb-10">Join 48,000+ creators using NovaFlow AI to grow their channels on autopilot.</p>
           <Button size="lg" className="bg-[var(--nova-cyan)] text-black hover:bg-[var(--nova-cyan)]/90 font-bold px-12 h-13 text-lg" onClick={handleDemo}>
-            Get started for free →
+            Get started →
           </Button>
-          <p className="text-sm text-muted-foreground mt-4">14-day free trial · Cancel anytime</p>
+          <p className="text-sm text-muted-foreground mt-4">Cancel anytime</p>
         </div>
       </section>
 

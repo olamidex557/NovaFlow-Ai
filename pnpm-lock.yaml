@@ -6,7 +6,11 @@ settings:
 
 importers:
 
-  .:
+  .: {}
+
+  backend: {}
+
+  frontend:
     dependencies:
       '@hookform/resolvers':
         specifier: ^5.4.0

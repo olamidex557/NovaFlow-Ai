@@ -2,6 +2,14 @@
   "name": "novaflow-ai",
   "private": true,
   "version": "0.0.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@swc/core",
+      "lmdb",
+      "msgpackr-extract"
+    ]
+  },
   "scripts": {
     "dev": "pnpm --dir frontend dev",
     "build": "pnpm --dir backend check && pnpm --dir frontend build",
